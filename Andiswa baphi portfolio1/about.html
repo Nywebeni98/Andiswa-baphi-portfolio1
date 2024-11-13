@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Photosec</title>
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- fonts awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+                <div class="custom_menu-btn">
+                    <button onclick="openNav()">
+            <span class="s-1"> </span>
+            <span class="s-2"> </span>
+            <span class="s-3"> </span>
+          </button>
+                </div>
+                <div id="myNav" class="overlay">
+                    <div class="menu_btn-style ">
+                        <button onclick="closeNav()">
+              <span class="s-1"> </span>
+              <span class="s-2"> </span>
+              <span class="s-3"> </span>
+            </button>
+                    </div>
+                    <div class="overlay-content">
+                        <a class="" href="index.html">
+              Home
+            </a>
+                        <a class="active" href="about.html">
+              About
+            </a>
+                        <a class="" href="portfolio.html">
+              Portfolio
+            </a>
+                        <a class="" href="team.html">
+              Team
+            </a>
+                    </div>
+                </div>
+                <a class="navbar-brand" href="index.html">
+                    <span>
+            Photosec
+          </span>
+                </a>
+                <a href="tel:+27605551855" class="call_btn">
+          Call Us Now
+        </a>
+            </nav>
+        </header>
+        <!-- end header section -->
+    </div>
+
+    <!-- about section -->
+
+    <section class="about_section ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="img-box col-lg-8 col-md-7">
+                    <img src="images/about-img.jpg" alt="" />
+                </div>
+                <div class="detail-box detail_box_common col-lg-4 col-md-5 text_center">
+                    <div class="heading_container heading_center">
+                        <h2>About me</h2>
+                    </div>
+                    <p>
+                        Mafaku, a rising DJ, has finely honed her skills over the past 4 years, gracing venues like Sportscene DJ series, Grand West Casino, Gin & Tonic events, Zeits Mocca, Time Out Market, and Cabo Beach Club. Since 2022, she has been a prominent presence at silent events across various locations and made a noteworthy appearance at Bazique Festival in 2023.
+                    </p>
+                    <p id="moreText" style="display: none;">
+                        Mafaku holds the position of resident DJ at Tiger's Milk Claremont, with additional bookings from affiliated establishments such as La Parada (Kloof Street and Century City) and Tiger's Milk (Kloof Street, Century City, Long Street, and Camps Bay).
+                
+                        Fueled by a love for Deep House, Afro House, Afro Tech, and classic house, Mafaku finds inspiration in DJ Zinhle, Nastee Nev, Black Motion, Shimza, the Godfathers of Deephouse, and some artists under the Stay True Sounds record label. With a devoted fan base, she aspires to continue sharing stages with established artists and craft her own musical creations in the near future.
+                    </p>
+                    <a href="javascript:void(0)" onclick="toggleReadMore()" id="readMoreBtn">Read More</a>
+                </div>
+                
+                <script>
+                    function toggleReadMore() {
+                        var moreText = document.getElementById("moreText");
+                        var btnText = document.getElementById("readMoreBtn");
+                
+                        if (moreText.style.display === "none") {
+                            moreText.style.display = "inline";
+                            btnText.innerHTML = "Read Less";
+                        } else {
+                            moreText.style.display = "none";
+                            btnText.innerHTML = "Read More";
+                        }
+                    }
+                </script>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- end about section -->
+
+    <!-- contact section -->
+
+    <section class="contact_section ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 map_container">
+                    <div class="map">
+                        <div id="googleMap"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 detail-box detail_box_common">
+                    <div>
+                        <div class="heading_container">
+                            <h2>
+                                Get In Touch
+                            </h2>
+                        </div>
+                        <div class="info_contact">
+                            <div class="contact_link_box">
+                                <a href="https://www.google.com/maps/place/Tiger's+Milk+Claremont/@-33.9786358,18.4608768,17z/data=!3m1!4b1!4m6!3m5!1s0x1dcc42d20934b68f:0x104e4a7b193140c3!8m2!3d-33.9786358!4d18.4634517!16s%2Fg%2F11cs1ckthh?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>
+                    Location
+                  </span>
+                                </a>
+                                <a href="tel:+27605551855">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>Call +27 605 551 855</span>
+                                </a>
+                                
+                                <a href="mailto:mafaku.bookings@gmail.com" onclick="window.open('about:blank', '_blank');">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span>mafaku.bookings@gmail.com</span>
+                                </a>
+                                
+                                
+                            </div>
+                            <div class="info_social">
+                               
+                                <a href="https://www.tiktok.com/@mafaku_a?_t=8rEWNXzCHWa&_r=1" target="_blank">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.instagram.com/mafaku_a?igsh=M25sbDdoMjc5bTZ3&utm_source=qr" target="_blank">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                                <a href="" target="_blank">
+                                    <i class="fa fa-tiktok" aria-hidden="true"></i> <!-- TikTok Icon -->
+                                </a>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end contact section -->
+
+    <!-- footer section -->
+    <footer class="footer_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6">
+                    <p>
+                        &copy; <span id="displayYear"></span> Design by
+                        mafaku bookings
+                    </p>
+                </div>
+                <div class="col-xl-6">
+                    <div class="link_box">
+                        <a class="" href="index.html">
+              Home
+            </a>
+                        <a class="" href="about.html">
+              About
+            </a>
+                        <a class="" href="portfolio.html">
+              Portfolio
+            </a>
+                        <a class="" href="team.html">
+              Team
+            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section -->
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+    </script>
+    <!-- End Google Map -->
+
+</body>
+
+</html>
